@@ -1,4 +1,11 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
 public class Main {
+
+    static BufferedReader miBuffer = new BufferedReader(new InputStreamReader(System.in));
     public static void main(String[] args) {
 
         for (int i =0; i < 100; i++) {
@@ -25,5 +32,16 @@ public class Main {
                 }
             }
         }
+
+        String midato="";
+      do {
+          try {
+              midato=miBuffer.readLine();
+              System.out.println("Dato Leido: "+midato);
+          } catch (IOException e) {
+              throw new RuntimeException(e);
+          }
+      }while (midato.compareTo("0")!=0);
+
     }
 }
