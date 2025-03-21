@@ -15,6 +15,14 @@ public class Main {
                     System.out.println("30");
                     break;
                 }
+                case 40:{
+                    System.out.println("40");
+                    break;
+                }
+                case 60:{
+                    System.out.println("60");
+                    break;
+                }
             }
         }
     }
